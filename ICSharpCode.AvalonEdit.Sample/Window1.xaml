@@ -70,7 +70,9 @@
 				FontFamily="Consolas"
 				FontSize="10pt"
 				SyntaxHighlighting="C#"
-			>Welcome to AvalonEdit!
+			>Prio 1
+                Prio1
+                Dringend
 			</avalonEdit:TextEditor>
 			<GridSplitter Grid.Column="1" Width="4" HorizontalAlignment="Left"/>
 			<DockPanel Grid.Column="1" Margin="4 0 0 0">

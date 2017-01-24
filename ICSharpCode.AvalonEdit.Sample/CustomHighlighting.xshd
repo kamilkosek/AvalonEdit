@@ -2,20 +2,14 @@
 <SyntaxDefinition name="Custom Highlighting" xmlns="http://icsharpcode.net/sharpdevelop/syntaxdefinition/2008">
 	<Color name="Comment" foreground="Green" />
 	<Color name="String" foreground="Blue" />
+  <Color name="P1" background="Red" foreground="White" fontWeight="bold"/>
 	
 	<!-- This is the main ruleset. -->
 	<RuleSet>
 		<Span color="Comment" begin="//" />
 		<Span color="Comment" multiline="true" begin="/\*" end="\*/" />
-		
-		<Span color="String">
-			<Begin>"</Begin>
-			<End>"</End>
-			<RuleSet>
-				<!-- nested span for escape sequences -->
-				<Span begin="\\" end="." />
-			</RuleSet>
-		</Span>
+    <Span fontWeight="bold" begin="\*" end="\*"></Span>
+    <Span fontStyle="italic" begin="_" end="_"></Span>
 		
 		<Keywords fontWeight="bold" foreground="Blue">
 			<Word>if</Word>
@@ -23,8 +17,11 @@
 			<!-- ... -->
 		</Keywords>
 		
-		<Keywords fontWeight="bold" fontStyle="italic" foreground="Red">
-			<Word>AvalonEdit</Word>
+		<Keywords fontWeight="bold" foreground="Red" >
+      
+      <Word>Prio1</Word>
+      <Word>Prio 1</Word>
+      <Word>dringend</Word>
 		</Keywords>
 		
 		<!-- Digits -->
